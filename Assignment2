@@ -1,0 +1,31 @@
+/*
+ * Author:Subhash
+ * Generate prime numbers between 1 and 100 using for loop. A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself. A natural number greater than 1 that is not a prime number is called a composite number.
+ * Use for loop and break statement to achieve this task.
+ * 
+ */
+public class Assignment2 {
+
+	public static void main(String[] args) {
+		System.out.println("Prime numbers between 1 and 100");
+		int i=1,j;
+		while(i<=100){
+			boolean flag=false;
+			j=2;
+			while(j<i){
+				if(i%j==0){
+					flag=true;
+					break;
+				}
+				j++;
+			}
+			if(flag==false)
+			{
+				System.out.print(i);
+				System.out.print(' ');
+			}
+			i++;
+		}
+	}
+
+}
